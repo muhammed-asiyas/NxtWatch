@@ -1,0 +1,7 @@
+.sm-sidebar-item-lists {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  width: 100%;
+  background-color: blue;
+}

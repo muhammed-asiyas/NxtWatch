@@ -1,0 +1,114 @@
+.trending-head-box {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  padding-left: 80px;
+}
+
+@media screen and (max-width: 567px) {
+  .trending-head-box {
+    height: 80px;
+    width: 100%;
+    margin-top: -20px;
+    padding-left: 30px;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  .trending-head-box {
+    height: 90px;
+    width: 100%;
+    margin-left: 6px;
+    margin-top: -20px;
+    padding-left: 36px;
+  }
+}
+
+.trend-dark-font {
+  color: #1e293b;
+}
+
+.trend-light-font {
+  color: #f9f9f9;
+}
+
+.other-dark-font {
+  color: #64748b;
+}
+
+.other-light-font {
+  color: #94a3b8;
+}
+
+.trend-banner-dark-background {
+  background-color: #272626;
+  border: 1px solid #1d1c1c;
+}
+
+.trend-banner-light-background {
+  background-color: #ecf3f9;
+  border: 1px solid #e3eef8;
+}
+
+.trending-head {
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: 18px;
+}
+
+.gaming-list-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px;
+  padding-top: 70px;
+}
+
+.faburn-container {
+  display: flex;
+  padding: 30px;
+  border-radius: 50%;
+}
+
+.faburn {
+  color: #ff0000;
+  font-size: 30px;
+}
+
+.icon-light-background {
+  background-color: #d7dfe9;
+}
+
+.icon-dark-background {
+  background-color: #231f20;
+}
+
+@media screen and (max-width: 567px) {
+  .trending-head {
+    font-size: 22px;
+    margin-left: 12px;
+  }
+  .faburn-container {
+    padding: 18px;
+  }
+  .faburn {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  .trending-head {
+    font-size: 26px;
+    margin-left: 12px;
+  }
+  .faburn-container {
+    padding: 22px;
+  }
+  .faburn {
+    font-size: 24px;
+  }
+}

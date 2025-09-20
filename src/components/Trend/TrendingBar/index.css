@@ -1,0 +1,134 @@
+.game-list {
+  display: flex;
+  padding: 50px;
+}
+
+.link-list-lg {
+  display: flex;
+  text-decoration: none;
+}
+
+.link-list-sm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .link-list-lg {
+    display: none;
+  }
+  .game-list {
+    padding: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .link-list-sm {
+    display: none;
+  }
+}
+
+.game-thumbnailUrl {
+  width: 500px;
+}
+
+.game-thumbnail-sm {
+  width: 100%;
+}
+
+.game-list-items-lg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 12px;
+  list-style-type: none;
+}
+
+.game-list-items-sm {
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  list-style-type: none;
+}
+
+.game-view-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.game-title {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.game-title-sm {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.game-name {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+}
+.game-name-sm {
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.game-profile-image-url {
+  width: 50px;
+}
+
+.trend-view-count {
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 400;
+}
+.trend-view-count-sm {
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.game-published-date {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+}
+.game-published-date-sm {
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.game-dot {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.game-sub-container-sm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0px;
+  margin-left: 10px;
+}
+
+.game-view-list-sm {
+  display: flex;
+  padding: 0px;
+  align-items: center;
+}

@@ -1,0 +1,171 @@
+.saved-list-lg {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 800px) {
+  .saved-list-lg {
+    display: none;
+  }
+}
+
+.saved-list-sm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 30px;
+  list-style-type: none;
+}
+
+@media screen and (min-width: 801px) {
+  .saved-list-sm {
+    display: none;
+  }
+}
+
+.saved-video-thumbnail {
+  width: 450px;
+}
+
+.details-of-video-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.view-count-container {
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+  margin: 8px;
+  margin-top: 2px;
+}
+
+.saved-item-link {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 567px) {
+  .saved-video-thumbnail {
+    width: 100%;
+  }
+  .saved-list {
+    padding-left: 8px;
+    padding-right: 2px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  .saved-video-thumbnail {
+    width: 90%;
+  }
+  .saved-list {
+    padding-left: 8px;
+    padding-right: 2px;
+  }
+}
+
+.saved-title {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.saved-name {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.saved-game-view-count {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.saved-game-published-date {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 567px) {
+  .saved-title {
+    font-size: 22px;
+  }
+
+  .saved-name {
+    font-size: 16px;
+  }
+  .saved-game-view-count {
+    font-size: 16px;
+  }
+  .saved-game-published-date {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  .saved-title {
+    font-size: 22px;
+  }
+  .saved-name {
+    font-size: 16px;
+  }
+  .saved-game-view-count {
+    font-size: 16px;
+  }
+  .saved-game-published-date {
+    font-size: 16px;
+  }
+}
+
+.saved-view-count-container {
+  display: flex;
+  align-items: center;
+}
+
+.other-saved-light-font {
+  color: #94a3b8;
+}
+
+.other-saved-dark-font {
+  color: #616e7c;
+}
+
+.saved-items-description-container-sm {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.profile-image-url-sm {
+  width: 50px;
+}
+
+.sm-other-item-container {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0px;
+  margin-left: 10px;
+}
+
+.sm-last-items-container {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0px;
+}

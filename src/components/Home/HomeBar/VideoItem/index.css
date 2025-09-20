@@ -1,0 +1,219 @@
+.video-items-container {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.video-container {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.responsive-container {
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .video-items-container {
+    padding: 0px;
+  }
+  .video-container {
+    width: 100%;
+  }
+  .video-items-container {
+    justify-content: center;
+    width: 97%;
+  }
+  .responsive-container {
+    width: 100%;
+  }
+}
+
+.sub-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.item-title {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.item-view {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.item-dot {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 400;
+  margin: 8px;
+  margin-top: 2px;
+}
+
+.item-published-date {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.publish-and-view-container {
+  display: flex;
+  align-items: center;
+}
+
+.like-dislike-and-save-button-container {
+  display: flex;
+  align-items: center;
+}
+
+.each-button-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.item-buttons {
+  display: flex;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dark-font-button {
+  color: #f9f9f9;
+}
+
+.light-font-button {
+  color: #231f20;
+}
+
+.item-button-logo {
+  font-size: 20px;
+}
+
+.hrline {
+  display: flex;
+  width: 100%;
+}
+
+.hr-dark-mode {
+  border: 1px solid #606060;
+}
+
+.hr-light-mode {
+  border: 1px solid #383838;
+}
+
+.channel-container {
+  display: flex;
+  align-items: center;
+}
+
+.item-profile-image {
+  width: 70px;
+  margin-right: 10px;
+}
+
+.channel-details-container {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.channel-name {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.subscriber-count {
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.description {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .item-title {
+    font-size: 16px;
+  }
+  .item-view {
+    font-size: 12px;
+  }
+  .item-published-date {
+    font-size: 12px;
+  }
+  .each-button-container {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .item-buttons {
+    font-size: 12px;
+  }
+  .item-button-logo {
+    font-size: 16px;
+  }
+  .item-profile-image {
+    width: 50px;
+  }
+}
+
+.failure-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 250px;
+}
+
+.failure-head-dark-font {
+  color: #f1f1f1;
+}
+
+.failure-head-light-font {
+  color: #1e293b;
+}
+
+.failure-sub-dark-font {
+  color: #94a3b8;
+}
+.failure-sub-light-font {
+  color: #606060;
+}
+
+.liked-button {
+  color: #2563eb;
+}
+
+.not-active-button {
+  color: #6b6f72;
+}
