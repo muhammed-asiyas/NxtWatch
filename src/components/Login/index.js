@@ -74,12 +74,12 @@ class Login extends Component {
           return (
             <>
               <label className={`label ${labelFontColor}`} htmlFor="user-input">
-                Asiyas
+                USERNAME
               </label>
               <input
                 className="input-container"
                 type="text"
-                placeholder="Username"
+                placeholder="rahul"
                 id="user-input"
                 value={userInput}
                 onChange={this.onChangeUserInput}
@@ -90,7 +90,7 @@ class Login extends Component {
               <input
                 className="input-container"
                 type={showPasswordText}
-                placeholder="Password"
+                placeholder="rahul@2021"
                 id="password"
                 value={passwordInput}
                 onChange={this.onChangePasswordInput}
