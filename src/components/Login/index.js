@@ -74,7 +74,7 @@ class Login extends Component {
           return (
             <>
               <label className={`label ${labelFontColor}`} htmlFor="user-input">
-                USERNAME
+                Asiyas
               </label>
               <input
                 className="input-container"
