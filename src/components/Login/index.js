@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import {Redirect} from 'react-router-dom'
+import {Navigate, useNavigate} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import {LoginButton} from '../styledComponents/styledComponents'
 import ThemeContext from '../../context/ThemeContext'
@@ -14,9 +14,9 @@ class Login extends Component {
   }
 
   onSubmitSuccess = jwtToken => {
-    const {history} = this.props
+    const navigate = useNavigate()
     Cookies.set('jwt_token', jwtToken, {expires: 30})
-    history.replace('/')
+    navigate('/')
   }
 
   onSubmitError = errorMsg => {
@@ -116,7 +116,7 @@ class Login extends Component {
     const {showErrorMsg, errorMsg} = this.state
     const jwtToken = Cookies.get('jwt_token')
     if (jwtToken !== undefined) {
-      return <Redirect to="/" />
+      return <Navigate to="/not-found" replace />
     }
     return (
       <ThemeContext.Consumer>

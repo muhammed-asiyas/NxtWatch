@@ -1,4 +1,4 @@
-import {withRouter, Link} from 'react-router-dom'
+import {withRouter, Link, useNavigate} from 'react-router-dom'
 import Popup from 'reactjs-popup'
 import 'reactjs-popup/dist/index.css'
 import Cookies from 'js-cookie'
@@ -27,10 +27,11 @@ const sideBarListItem = [
 ]
 
 const Header = props => {
+  const navigate = useNavigate()
   const {history} = props
   const onLogout = () => {
     Cookies.remove('jwt_token')
-    history.replace('/login')
+    navigate('/login')
   }
   return (
     <ThemeContext.Consumer>

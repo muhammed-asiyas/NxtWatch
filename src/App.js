@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import {Switch, Route, Redirect} from 'react-router-dom'
+import {Route, Routes, Navigate} from 'react-router-dom'
 import ProtectedRoute from './components/ProtectedRoute'
 import Login from './components/Login'
 import Home from './components/Home'
@@ -158,16 +158,16 @@ class App extends Component {
           updateDisliked: this.updateDisliked,
         }}
       >
-        <Switch>
-          <Route exact path="/login" component={Login} />
-          <ProtectedRoute exact path="/" component={Home} />
-          <ProtectedRoute exact path="/trending" component={Trend} />
-          <ProtectedRoute exact path="/gaming" component={Gaming} />
-          <ProtectedRoute exact path="/saved-videos" component={SavedVideos} />
-          <ProtectedRoute exact path="/videos/:id" component={VideoItem} />
-          <Route exact path="/not-found" component={NotFound} />
-          <Redirect to="not-found" />
-        </Switch>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <ProtectedRoute path="/" element={<Home />} />
+          <ProtectedRoute path="/trending" element={<Trend />} />
+          <ProtectedRoute path="/gaming" element={<Gaming />} />
+          <ProtectedRoute path="/saved-videos" element={<SavedVideos />} />
+          <ProtectedRoute path="/videos/:id" element={<VideoItem />} />
+          <Route path="/not-found" element={<NotFound />} />
+          element=<Navigate to="/not-found" replace />
+        </Routes>
       </ThemeContext.Provider>
     )
   }
